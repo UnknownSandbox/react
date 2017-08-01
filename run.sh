@@ -1,1 +1,1 @@
-docker run --rm -it -p 3080:3000 -v /$PWD://app unknownhero/sandbox-react //bin//bash
+docker run --rm -it -p 8080:3000 -v /$PWD://app unknownhero/sandbox-react //bin//bash
