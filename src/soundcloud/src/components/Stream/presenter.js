@@ -1,16 +1,25 @@
 import React from 'react';
 
-function Stream({ tracks = [], onAuth }) {
+function Stream({user, tracks = [], onAuth, onPlay}) {
     return (
         <div>
             <div>
-                <button onClick={onAuth} type="button">Login</button>
+                {
+                    user ?
+                        <div>{user.username}</div> :
+                        <button onClick={onAuth} type="button">Login</button>
+                }
             </div>
             <br/>
             <div>
                 {
                     tracks.map((track, key) => {
-                        return <div className="track" key={key}>{track.title}</div>;
+                        return (
+                            <div className="track" key={key}>
+                                {track.title}
+                                <button type="button" onClick={() => onPlay(track)}>Play</button>
+                            </div>
+                        );
                     })
                 }
             </div>

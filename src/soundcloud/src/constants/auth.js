@@ -1,2 +1,2 @@
-export const CLIENT_ID = '1fb0d04a94f035059b0424154fd1b18c'; // Use your client ID
+export const CLIENT_ID = '5dcb740fce5f81cd280292ecf8a1900c'; // Use your client ID
 export const REDIRECT_URI = `http://localhost:3080/callback`;
