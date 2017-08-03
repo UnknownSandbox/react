@@ -1,0 +1,3 @@
+export const NEWS_CREATE_NEW = 'NEWS_CREATE_NEW';
+export const NEWS_UPDATE_ITEM = 'NEWS_UPDATE_ITEM';
+export const NEWS_REMOVE_ITEM = 'NEWS_REMOVE_ITEM';
