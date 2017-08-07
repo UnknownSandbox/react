@@ -21,7 +21,7 @@ const history = syncHistoryWithStore(browserHistory, store);
 
 ReactDOM.render(
     <Provider store={store}>
-        <Router history={history}>
+        <Router onUpdate={() => window.scrollTo(0, 0)} history={history}>
             <Route path="/" component={App}>
                 <IndexRoute component={Stream} />
                 <Route path="/" component={Stream} />
